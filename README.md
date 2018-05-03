@@ -3,4 +3,4 @@
 
 ![alt text](https://github.com/digitalinvitro/micro6502/edit/master/micro65-3D.png)
 ![Screenshot](master/micro65-3D.png)
-<img src="https://github.com/digitalinvitro/micro6502/edit/master/micro65-3D.png" width="400" height="500"/>
+<img src="master/micro65-3D.png" width="400" height="500"/>
