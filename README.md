@@ -3,4 +3,4 @@
 
 ![3D view](https://github.com/digitalinvitro/micro6502/raw/master/micro65-3D.jpg)
 
-<img src="https://github.com/digitalinvitro/micro6502/raw/master/micro65-3D.jpg" width="400" height="500"/>
+# <img src="https://github.com/digitalinvitro/micro6502/raw/master/micro65-3D.jpg" width="400" height="500"/>
