@@ -1,4 +1,11 @@
 # micro6502
+
+<style>
+.block {
+line-height: 120%;
+}
+</style>
+
 6502 cpu based micro module (for mcu applications)
 
 ![3D view](https://github.com/digitalinvitro/micro6502/raw/master/micro65-3D.jpg)
@@ -19,7 +26,7 @@ Hardware
   МОНИОТР обеспечивает два режиам работы 
   а) выдачу 256-байтного дампа 
      Данный режим включается сразу после загрузки монитора с UART. В данном режиме с терминала вводится стартовый адрес и команда '@' для выдачи дампа в терминал. Стартовый адрес вводятся в шестнадцатеричном представлении.
-<tt><div style=”line-height:0%”>
+<tt><div class=”block”>
 <p>-->FF00</p>
 <p>-->@</p>
 <p>D8 A2 00 86 39 A9 47 8D 45 FF A9 FF 8D 46 FF A0</p>
