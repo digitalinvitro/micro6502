@@ -1,6 +1,8 @@
 # micro6502
 6502 cpu based micro module (for mcu applications)
 
+![3D view](https://github.com/digitalinvitro/micro6502/raw/master/micro65-3D.jpg)
+
 Hardware
 
 - CPU mos6502 - 1MHz
@@ -46,8 +48,5 @@ E7 FF 20 E7 FF 85 08 48 A5 02 30 FC 68 60 0D 0A
 -->!F9
 -->!@
 -->
-     
-
-![3D view](https://github.com/digitalinvitro/micro6502/raw/master/micro65-3D.jpg)
 
 /* <img src="https://github.com/digitalinvitro/micro6502/raw/master/micro65-3D.jpg" width="4" height="5"/> */
