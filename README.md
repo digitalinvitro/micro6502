@@ -22,10 +22,9 @@ Hardware
 <div style=” line-height:0.5;”><tt>
 <p>-->FF00</p>
 <p>-->@</p>
-<p>D8 A2 00 86 39 A9 47 8D 45 FF A9 FF 8D 46 FF A0
-08 5D 00 FF 4A 90 02 49 31 88 D0 F8 E8 D0 F0 A2</p>
-
-<tt>00 9A 20 DF FF 8E F3 FF A0 3C 84 38 A0 EE A9 FF</tt>
+<p>D8 A2 00 86 39 A9 47 8D 45 FF A9 FF 8D 46 FF A0</p>
+<p>08 5D 00 FF 4A 90 02 49 31 88 D0 F8 E8 D0 F0 A2</p>
+<p>00 9A 20 DF FF 8E F3 FF A0 3C 84 38 A0 EE A9 FF</p>
 
 <tt>20 CE FF BA A5 08 10 FC 29 7F 20 DF FF 95 10 E8</tt>
 
