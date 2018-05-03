@@ -25,9 +25,9 @@ Hardware
 <tt>
 <p>-->FF00</p>
 <p>-->@</p>
-<p style="display: inline;">D8 A2 00 86 39 A9 47 8D 45 FF A9 FF 8D 46 FF A0</p>
-<p style="display: inline;">08 5D 00 FF 4A 90 02 49 31 88 D0 F8 E8 D0 F0 A2</p>
-<p style="display: inline;">00 9A 20 DF FF 8E F3 FF A0 3C 84 38 A0 EE A9 FF</p>
+<p style="display: inline;line-height:0%">D8 A2 00 86 39 A9 47 8D 45 FF A9 FF 8D 46 FF A0</p>
+<p style="display: inline;line-height:0%">08 5D 00 FF 4A 90 02 49 31 88 D0 F8 E8 D0 F0 A2</p>
+<p style="display: inline;line-height:0%">00 9A 20 DF FF 8E F3 FF A0 3C 84 38 A0 EE A9 FF</p>
 <p>20 CE FF BA A5 08 10 FC 29 7F 20 DF FF 95 10 E8</p>
 <p>C9 0D D0 F0 4C 47 FF CA E0 01 F0 16 20 A1 FF AD</p>
 <p>F3 FF F0 D8 BA A5 3F 81 3C E6 3C D0 CF E6 3D 4C</p>
