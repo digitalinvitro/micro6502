@@ -61,4 +61,4 @@ Hardware
 <p>-->g</p>
 </tt>
 
-/* <img src="https://github.com/digitalinvitro/micro6502/raw/master/micro65-3D.jpg" width="4" height="5"/> */
+<img src="https://github.com/digitalinvitro/micro6502/raw/master/pic/real.jpg" width="600" height="350"/>
