@@ -1,0 +1,65 @@
+NET "BUSAH[7]" LOC = P39;
+NET "BUSAH[6]" LOC = P38;
+NET "BUSAH[5]" LOC = P36;
+NET "BUSAH[4]" LOC = P35;
+NET "BUSAH[3]" LOC = P34;
+NET "BUSAH[2]" LOC = P33;
+NET "BUSAH[1]" LOC = P32;
+NET "BUSAH[0]" LOC = P31;
+
+NET "BUSAL[7]" LOC = P11;
+NET "BUSAL[6]" LOC = P1;
+NET "BUSAL[5]" LOC = P4;
+NET "BUSAL[4]" LOC = P7;
+NET "BUSAL[3]" LOC = P8;
+NET "BUSAL[2]" LOC = P9;
+NET "BUSAL[1]" LOC = P10;
+NET "BUSAL[0]" LOC = P13;
+
+NET "DBUS[0]" LOC = P18;
+NET "DBUS[1]" LOC = P19;
+NET "DBUS[2]" LOC = P20;
+NET "DBUS[3]" LOC = P22;
+NET "DBUS[4]" LOC = P23;
+NET "DBUS[5]" LOC = P24;
+NET "DBUS[6]" LOC = P25;
+NET "DBUS[7]" LOC = P27;
+
+NET "RESET" LOC = P64;
+
+NET "WE" LOC = P62;			    #CPLD -> RAM.WE
+NET "CS" LOC = P63;
+NET "CPUCLK" LOC = P16;
+NET "Phi2" LOC = P60;          #CPU.phi2 -> CPLD       [z80 IORQ]
+NET "WR" LOC = P58;            #CPU.WR -> CPLD
+NET "RD" LOC = P57;				 #CPLD -> RAM.OE
+
+NET "RXpin" LOC = P12;
+NET "TXpin" LOC = P6;
+NET "SW"	 LOC = P49;				 #P7
+NET "SCL" LOC = P48;           #P6  #CPLD -> i2c.SCL        [z80 MREQ]
+NET "SDA" LOC = P47;			    #P5  #CPLD <-> i2c.SDA       [z80 INT]
+NET "RCK" LOC = P46;           #P4  #CPLD -> CPU.IRQ        [z80 RST]
+NET "P0" LOC = P45;				 #P3
+NET "ON"	 LOC = P2;			    #CPLD -> POWERON			 [z80 BOOTEN]
+#NET "RST" LOC = P17;           #CPLD -> CPU.RST
+NET "clk" LOC = P15;
+
+#NET "LED[0]" LOC = P43;
+#NET "LED[1]" LOC = P46;
+#NET "LED[2]" LOC = P44;
+#NET "LED[3]" LOC = P45;
+#NET "LED[4]" LOC = P47;
+#NET "LED[13]" LOC = P17;
+#NET "LED[14]" LOC = P40;
+#NET "LED[15]" LOC = P5;
+
+#NET "IN[0]" LOC = P48;
+#NET "IN[1]" LOC = P50;
+#NET "IN[2]" LOC = P51;
+#NET "IN[3]" LOC = P52;
+#NET "IN[4]" LOC = P56;  
+#NET "IN[5]" LOC = P57;
+#NET "IN[6]" LOC = P61;
+
+
