@@ -2,7 +2,7 @@
 
 6502 cpu based micro module (for mcu applications)
 
-![3D view](https://github.com/digitalinvitro/micro6502/raw/master/micro65-3D.jpg)
+![3D view](https://github.com/digitalinvitro/micro6502/raw/master/pic/micro65-3D.jpg)
 
 Hardware
 
@@ -12,7 +12,7 @@ Hardware
 - UART RX/TX
 - load 256-byte MONITOR to SRAM from UART (terminal) on power on
 - 16-bit address bus, 8-bit data bus, control bus and 16 IO pin to pinheaders connected
-- option spi, i2c, SN74HC595, dendy joystik interfaces programmed in CPLD
+- option spi/i2c/SN74HC595/dendy joystik(HEF4021B) interfaces HDL programmed in CPLD
 
 Программное обеспечение:
 
