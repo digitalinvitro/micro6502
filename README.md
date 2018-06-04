@@ -15,7 +15,7 @@ Hardware
 - option spi/i2c/SN74HC595/dendy joystik(HEF4021B) interfaces HDL programmed in CPLD
 
 Программное обеспечение:
-* Ассемблер - naken asm http://www.mikekohn.net/micro/naken_asm.php
+* АССЕМБЛЕР - naken asm http://www.mikekohn.net/micro/naken_asm.php
 * МОНИТОР   - программное обеспечение для начальной загрузки модуля по включению питания. Загружается с адреса 0xFF00, после загрузки 256 байт кода, на процессор подается питание с последюущим сбросом по лининии reset. 
 * ОТЛАДЧИК  - программное обеспечение для отладки загружаемого кода, интерфейс строчный. Загружается с адреса 0x1000.
  
