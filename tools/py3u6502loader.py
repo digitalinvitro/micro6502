@@ -3,9 +3,10 @@ import sys
 import argparse
 import logging
 import serial
+import platform
 import time
 
-version = "Ver 0.1"
+version = "Ver 0.11"
 
 class FileLoader:
     def __init__(self):
@@ -32,9 +33,14 @@ class UartWriter:
 
     def write_byte(self, b):
         self.uartport.write(b)
+        
+    def write_string(self, s):
+        self.uartport.write(s.encode())
 
 if __name__ == '__main__':
     print ('Micro6502 data loader (py3). %s' % version)
+    print ('Platform: ' + platform.system() + ' ' + platform.release())
+    
     parser = argparse.ArgumentParser()
     optional = parser._action_groups.pop()
     required = parser.add_argument_group('required arguments')
@@ -76,7 +82,7 @@ if __name__ == '__main__':
     logging.info('Bootloader bytes loaded:' + str(filer.size))
     counter = 0
     for b in bootbytes:
-        logging.info('Byte %d: %02X to UART (BIN)' % (counter, ord(b)))
+        logging.info('Byte %d: %02X to UART (BIN)' % (counter, b))
         counter += 1
         ser.write_byte(b)
 
@@ -86,21 +92,21 @@ if __name__ == '__main__':
     counter = 0
     time.sleep(0.2)
     delay = args.delay_ms/1000.0
-    ser.write_byte('1000\0')
+    ser.write_string('1000\0')
     time.sleep(delay)
-    ser.write_byte('!\0')
+    ser.write_string('!\0')
     time.sleep(delay)
 
     for b in progbytes:
-        hexbyte = '%02X' % ord(b)
-        logging.info('Byte %d: %s to UART (HEX)' % (counter, hexbyte))
+        hexbyte_str = '%02X' % b
+        logging.info('Byte %d: %s to UART (HEX)' % (counter, hexbyte_str))
         counter += 1
-        ser.write_byte(hexbyte)
+        ser.write_string(hexbyte_str)
         time.sleep(delay)
 
-    ser.write_byte('@\0')
+    ser.write_string('@\0')
     time.sleep(delay)
-    ser.write_byte('1000\0')
-    ser.write_byte('g\r\n')
+    ser.write_string('1000\0')
+    ser.write_string('g\r\n')
 
     print ('Done')
