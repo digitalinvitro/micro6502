@@ -33,14 +33,19 @@ class UartWriter:
 
     def write_byte(self, b):
         self.uartport.write(b)
-        
+
     def write_string(self, s):
         self.uartport.write(s.encode())
 
 if __name__ == '__main__':
     print ('Micro6502 data loader (py3). %s' % version)
     print ('Platform: ' + platform.system() + ' ' + platform.release())
-    
+
+    if (platform.system() == 'Linux'):
+        platform_is_lin = True
+    else:
+        platform_is_lin = False
+
     parser = argparse.ArgumentParser()
     optional = parser._action_groups.pop()
     required = parser.add_argument_group('required arguments')
@@ -82,7 +87,10 @@ if __name__ == '__main__':
     logging.info('Bootloader bytes loaded:' + str(filer.size))
     counter = 0
     for b in bootbytes:
-        logging.info('Byte %d: %02X to UART (BIN)' % (counter, b))
+        if platform_is_lin:
+            logging.info('Byte %d: %02X to UART (BIN)' % (counter, ord(b)))
+        else:
+            logging.info('Byte %d: %02X to UART (BIN)' % (counter, b))
         counter += 1
         ser.write_byte(b)
 
@@ -98,7 +106,11 @@ if __name__ == '__main__':
     time.sleep(delay)
 
     for b in progbytes:
-        hexbyte_str = '%02X' % b
+        if platform_is_lin:
+            hexbyte_str = '%02X' % ord(b)
+        else:
+            hexbyte_str = '%02X' % b
+
         logging.info('Byte %d: %s to UART (HEX)' % (counter, hexbyte_str))
         counter += 1
         ser.write_string(hexbyte_str)
