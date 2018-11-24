@@ -6,7 +6,7 @@ import serial
 import platform
 import time
 
-version = "Ver 0.11"
+version = "Ver 0.12"
 
 class FileLoader:
     def __init__(self):
@@ -88,9 +88,9 @@ if __name__ == '__main__':
     counter = 0
     for b in bootbytes:
         if platform_is_lin:
-            logging.info('Byte %d: %02X to UART (BIN)' % (counter, ord(b)))
+            logging.info('Byte %d: %02X to %s (BIN)' % (counter, ord(b), args.uartport))
         else:
-            logging.info('Byte %d: %02X to UART (BIN)' % (counter, b))
+            logging.info('Byte %d: %02X to %s (BIN)' % (counter, b, args.uartport))
         counter += 1
         ser.write_byte(b)
 
@@ -107,11 +107,11 @@ if __name__ == '__main__':
 
     for b in progbytes:
         if platform_is_lin:
-            hexbyte_str = '%02X' % ord(b)
+            hexbyte_str = '%02X\r' % ord(b)
         else:
-            hexbyte_str = '%02X' % b
+            hexbyte_str = '%02X\r' % b
 
-        logging.info('Byte %d: %s to UART (HEX)' % (counter, hexbyte_str))
+        logging.info('Byte %d: %s to %s (HEX)' % (counter, hexbyte_str, args.uartport))
         counter += 1
         ser.write_string(hexbyte_str)
         time.sleep(delay)
